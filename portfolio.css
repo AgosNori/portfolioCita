@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+#navbar ul {
+    display: flex;
+    /* se pone uno al lado de otro */
+    gap: 15px;
+    /* da espacio entre los elementos */
+
+
+}
+
+#navbar ul li {
+    list-style: none;
+    /* saca los puntos de los items */
+
+}
+
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    /* cambia el color del texto */
+    text-decoration: none;
+    /* saca las lineas de decoración*/
+
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #5B913B;
+    color: white;
+    align-items: center;
+    height: 70px;
+}
+
+#banner {
+    margin: 100px;
+}
+#banner .foto{
+    border-radius: 50px 0 50px 0;
+}
