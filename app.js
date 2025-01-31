@@ -3,9 +3,9 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 
     /* Las variables son un lugar de almacenamiento en donde se guarda un valor*/
 
-    const serviceId = "";
-    const templateId = "";
-    const apikey = "";
+    const serviceId = "service_iabk8ro";
+    const templateId = "template_ya6emoa";
+    const apikey = "tmaJSOIUwGV7FdVsE";
 
     emailjs.sendForm(serviceId,templateId,this,apikey).then((result)=>{
         console.log(result.text); /* imprime en la consola */
