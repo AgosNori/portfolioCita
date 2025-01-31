@@ -11,7 +11,20 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
         console.log(result.text); /* imprime en la consola */
         this.reset();
 
-        
+        Swal.fire({
+            title:"¡Mensaje Enviado!",
+            text:"Gracias por contactarte",
+            icon:"success",
+            confirmButtonText:"Ok"
+        })
+    }).catch((error)=>{ /* cuando hay algun error , muestra otro mensaje */
+        console.log(error);
+        Swal.fire({
+            title:"¡Error!",
+            text:"Hubo un problema al enviar el formulario. Por favor intenta más tarde.",
+            icon:"error",
+            confirmButtonText:"Ok"
+        })
     })
 
 })
